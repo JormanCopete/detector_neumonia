@@ -1,0 +1,7 @@
+INTRUCCIONES DE IMPLEMENTACIÓN
+1. Clonar el repositorio--> https://github.com/JormanCopete/detector_neumonia.git
+2. Ingresar por la terminal de comandos al directorio donde están los archivos del repositorio
+   anteriormente clonado y ejecutar-->$ docker build -t jormancopete/miniconda .
+3. Luego de construir la imagen, ejecutar el comando-->$  xhost +local:*
+4. Despues de esto vamos a levantar la imagen de docker aneriormente construida con el comand-->$
+   docker run --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix/ jormancopete/miniconda
